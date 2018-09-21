@@ -1,2 +1,9 @@
 #exclude VS Code WS files
 *.code-workspace
+
+#SCSS transpiler to CSS
+gulpfile.js
+
+
+#exlude node modules related to gulp
+node_modules/

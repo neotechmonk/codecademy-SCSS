@@ -1,7 +1,7 @@
 // Sass configuration
 // var gulp = require('./node_modules/gulp/bin/gulp.js');
-var gulp = require('./node_modules/gulp/index');
-var sass = require('./node_modules/gulp-sass/index.js');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 
 // var sass = require('./node_modules/gulp-sass/index.js');
 

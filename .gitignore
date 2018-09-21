@@ -6,4 +6,4 @@ gulpfile.js
 
 
 #exlude node modules related to gulp
-node_modules/
+node_modules/*

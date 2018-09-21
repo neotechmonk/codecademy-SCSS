@@ -7,3 +7,6 @@ gulpfile.js
 
 #exlude node modules related to gulp
 node_modules/*
+
+#exclude VS Code task files
+.vscode/*

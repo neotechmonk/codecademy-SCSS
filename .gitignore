@@ -10,3 +10,5 @@ node_modules/*
 
 #exclude VS Code task files
 .vscode/*
+
+*.package-lock.json

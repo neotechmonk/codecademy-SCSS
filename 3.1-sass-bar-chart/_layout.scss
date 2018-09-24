@@ -1,0 +1,46 @@
+// Title 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: #434444;
+  }
+  
+  span {
+    display: block;
+  }
+
+  //Bar chart-bars
+  rect {
+    width: 24px;
+    float: left;
+    padding-left: 25px;
+    padding-top: 7px;
+    white-space: nowrap;
+    word-break: break-all;
+    position: relative;
+    bottom: 0px;
+    font-size: 12px;
+    color: #707070;
+    background-color: #707070;
+    font-family: 'Montserrat', sans-serif;
+    
+    //write food name vertically inside the bar
+    &:before {
+      display: inline-block;
+      -webkit-transform: rotate(90deg);
+      transform-origin: left top 0;
+    //   padding: 0 10px  ;
+      font-weight: bold;
+      letter-spacing: 1.2;
+      float: left;
+    }
+    //write tonnage horizaontally across the bar
+    &:after {
+      position: absolute;
+      top: -15px;
+      left: 0px;
+    }
+  }
+  
+  

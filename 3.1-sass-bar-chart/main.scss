@@ -1,0 +1,30 @@
+//Imports
+@import "variables";
+@import "layout";
+
+
+
+// Traverse thorugh each food item
+@each $food, $tons-produced in $top-foods{
+    $i: index($top-foods,($food $tons-produced));
+    rect:nth-child(#{$i + 1}) {
+        height: #{$tons-produced/3}px;
+        &:before {
+            content: $food;
+        }
+        &:after {
+            content: $tons-produced + "m";
+        }
+
+        @if($i%3==0){
+            background:fade-out($diamond-blue, $i*3/100);
+        }
+        @else if($i%3==1){
+            background:fade-out($sea-green, $i*3/100);
+        }
+        @else if($i%3==2){
+            background:fade-out($pale-green, $i*3/100);
+        }
+    }
+}
+
